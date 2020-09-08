@@ -21,8 +21,11 @@ const config = {
             }
         ]
     },
-    mode: 'development'
-
+    mode: 'development',
+    node: {
+        fs: 'empty',
+        net: 'empty'
+    }
 }
 
 module.exports = config;
